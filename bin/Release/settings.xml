@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--VoxSharp Default Settings-->
+<settings>
+  <user>
+    <defaultdirfrom>
+    </defaultdirfrom>
+    <defaultdirto>
+    </defaultdirto>
+  </user>
+  <app>
+    <logpath>\logs\</logpath>
+    <soxpath>\res\sox.exe</soxpath>
+    <lamepath>\res\lame.exe</lamepath>
+    <ffmpegpath>\res\ffmpeg.exe</ffmpegpath>
+  </app>
+</settings>

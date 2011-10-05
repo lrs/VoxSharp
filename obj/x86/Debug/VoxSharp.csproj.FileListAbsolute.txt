@@ -1,0 +1,14 @@
+D:\projects\sharpdevelop\VoxSharp\VoxSharp\bin\Debug\VoxSharp.exe
+D:\projects\sharpdevelop\VoxSharp\VoxSharp\bin\Debug\VoxSharp.pdb
+D:\projects\sharpdevelop\VoxSharp\VoxSharp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\projects\sharpdevelop\VoxSharp\VoxSharp\obj\x86\Debug\VoxSharp.MainForm.resources
+D:\projects\sharpdevelop\VoxSharp\VoxSharp\obj\x86\Debug\VoxSharp.csproj.GenerateResource.Cache
+D:\projects\sharpdevelop\VoxSharp\VoxSharp\obj\x86\Debug\VoxSharp.exe
+D:\projects\sharpdevelop\VoxSharp\VoxSharp\obj\x86\Debug\VoxSharp.pdb
+C:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp\obj\x86\Debug\VoxSharp.MainForm.resources
+C:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp\obj\x86\Debug\VoxSharp.csproj.GenerateResource.Cache
+C:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp\obj\x86\Debug\VoxSharp.exe
+C:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp\bin\Debug\VoxSharp.exe
+C:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp\bin\Debug\VoxSharp.pdb
+C:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp\obj\x86\Debug\VoxSharp.pdb

@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft fxcop 1.36\Xml\FxCopReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Namespaces>
+  <Namespace Name="VoxSharp">
+   <Messages>
+    <Message Id="Vox" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Vox' in namespace name 'VoxSharp'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp\bin\Debug\VoxSharp.exe">
+   <Modules>
+    <Module Name="voxsharp.exe">
+     <Messages>
+      <Message Id="Vox" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Vox' in assembly name 'VoxSharp.exe'.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'VoxSharp.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Because assembly 'VoxSharp.exe' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="MediaInfoLib">
+       <Types>
+        <Type Name="InfoFileOptions" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="MarkEnumsWithFlags" Category="Microsoft.Design" CheckId="CA1027" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">The constituent members of 'InfoFileOptions' appear to represent flags that can be combined rather than discrete values. If this is correct, mark the enumeration with FlagsAttribute.</Issue>
+          </Message>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'InfoFileOptions' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#FileOption_CloseAll" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'InfoFileOptions.FileOption_CloseAll'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FileOption_Max" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'InfoFileOptions.FileOption_Max'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FileOption_NoRecursive" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'InfoFileOptions.FileOption_NoRecursive'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FileOption_Nothing" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'InfoFileOptions.FileOption_Nothing'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InfoOptions" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'InfoOptions' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="MediaInfo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnNativeResourcesShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1049" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="50" Level="CriticalError">Implement IDisposable on 'MediaInfo'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.IndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="127">'MediaInfo.MediaInfo()' makes a call to 'string.IndexOf(string)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.IndexOf(string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Count_Get(MediaInfoLib.StreamKind)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="212">In member 'MediaInfo.Count_Get(StreamKind)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="212">Remove the underscores from member name 'MediaInfo.Count_Get(StreamKind)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Count_Get(MediaInfoLib.StreamKind,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="203">In member 'MediaInfo.Count_Get(StreamKind, int)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="203">In member 'MediaInfo.Count_Get(StreamKind, int)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="203">Remove the underscores from member name 'MediaInfo.Count_Get(StreamKind, int)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(MediaInfoLib.StreamKind,System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="210">In member 'MediaInfo.Get(StreamKind, int, int)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="210">In member 'MediaInfo.Get(StreamKind, int, int)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="210">In member 'MediaInfo.Get(StreamKind, int, int)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(MediaInfoLib.StreamKind,System.Int32,System.Int32,MediaInfoLib.InfoKind)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Kind" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="182">In member 'MediaInfo.Get(StreamKind, int, int, InfoKind)', correct the casing of 'Kind' in parameter name 'KindOfInfo' by changing it to 'kind'.</Issue>
+            </Message>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="182">In member 'MediaInfo.Get(StreamKind, int, int, InfoKind)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="182">In member 'MediaInfo.Get(StreamKind, int, int, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="182">In member 'MediaInfo.Get(StreamKind, int, int, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(MediaInfoLib.StreamKind,System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="209">In member 'MediaInfo.Get(StreamKind, int, string)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="209">In member 'MediaInfo.Get(StreamKind, int, string)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="209">In member 'MediaInfo.Get(StreamKind, int, string)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(MediaInfoLib.StreamKind,System.Int32,System.String,MediaInfoLib.InfoKind)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Kind" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="208">In member 'MediaInfo.Get(StreamKind, int, string, InfoKind)', correct the casing of 'Kind' in parameter name 'KindOfInfo' by changing it to 'kind'.</Issue>
+            </Message>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="208">In member 'MediaInfo.Get(StreamKind, int, string, InfoKind)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="208">In member 'MediaInfo.Get(StreamKind, int, string, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="208">In member 'MediaInfo.Get(StreamKind, int, string, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(MediaInfoLib.StreamKind,System.Int32,System.String,MediaInfoLib.InfoKind,MediaInfoLib.InfoKind)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Kind" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="170">In member 'MediaInfo.Get(StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Kind' in parameter name 'KindOfInfo' by changing it to 'kind'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="170">In member 'MediaInfo.Get(StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Kind' in parameter name 'KindOfSearch' by changing it to 'kind'.</Issue>
+            </Message>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="170">In member 'MediaInfo.Get(StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="170">In member 'MediaInfo.Get(StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="170">In member 'MediaInfo.Get(StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Close(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Close(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Count_Get(System.IntPtr,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Count_Get(IntPtr, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Delete(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Delete(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Get(System.IntPtr,System.IntPtr,System.IntPtr,System.String,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Get(IntPtr, IntPtr, IntPtr, string, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_GetI(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_GetI(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Inform(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Inform(IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_New()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_New()' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Open(System.IntPtr,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Open(IntPtr, string)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Open_Buffer_Continue(System.IntPtr,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Open_Buffer_Continue(IntPtr, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Open_Buffer_Continue_GoTo_Get(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Open_Buffer_Continue_GoTo_Get(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Open_Buffer_Finalize(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Open_Buffer_Finalize(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Open_Buffer_Init(System.IntPtr,System.Int64,System.Int64)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Open_Buffer_Init(IntPtr, long, long)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_Option(System.IntPtr,System.String,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_Option(IntPtr, string, string)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfo_State_Get(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfo_State_Get(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoA_Get(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfoA_Get(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoA_GetI(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfoA_GetI(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoA_Inform(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfoA_Inform(IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoA_Open(System.IntPtr,System.Int64,System.Int64)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'MediaInfo.MediaInfoA_Open(IntPtr, long, long)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfoA_Open(IntPtr, long, long)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoA_Open(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfoA_Open(IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoA_Open_Buffer_Continue(System.IntPtr,System.Int64,System.Byte[],System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'MediaInfo.MediaInfoA_Open_Buffer_Continue(IntPtr, long, byte[], IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfoA_Open_Buffer_Continue(IntPtr, long, byte[], IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoA_Open_Buffer_Continue_GoTo_Get(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'MediaInfo.MediaInfoA_Open_Buffer_Continue_GoTo_Get(IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfoA_Open_Buffer_Continue_GoTo_Get(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoA_Open_Buffer_Finalize(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'MediaInfo.MediaInfoA_Open_Buffer_Finalize(IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfoA_Open_Buffer_Finalize(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoA_Option(System.IntPtr,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfo.MediaInfoA_Option(IntPtr, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Open(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="134">In member 'MediaInfo.Open(string)', correct the casing of 'File' in parameter name 'FileName' by changing it to 'file'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Open_Buffer_Continue(System.IntPtr,System.IntPtr)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Buffer" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="150">In member 'MediaInfo.Open_Buffer_Continue(IntPtr, IntPtr)', correct the casing of 'Buffer' in parameter name 'Buffer' by changing it to 'buffer'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="150">In member 'MediaInfo.Open_Buffer_Continue(IntPtr, IntPtr)', correct the casing of 'Buffer' in parameter name 'Buffer_Size' by changing it to 'buffer'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="150">Remove the underscores from member name 'MediaInfo.Open_Buffer_Continue(IntPtr, IntPtr)'.</Issue>
+             <Issue Name="MemberParameter" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="150">In member 'MediaInfo.Open_Buffer_Continue(IntPtr, IntPtr)', remove the underscores from parameter name 'Buffer_Size'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Open_Buffer_Continue_GoTo_Get()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="154">Remove the underscores from member name 'MediaInfo.Open_Buffer_Continue_GoTo_Get()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Open_Buffer_Finalize()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="158">Remove the underscores from member name 'MediaInfo.Open_Buffer_Finalize()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Open_Buffer_Init(System.Int64,System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="146">In member 'MediaInfo.Open_Buffer_Init(long, long)', correct the casing of 'File' in parameter name 'File_Offset' by changing it to 'file'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="146">In member 'MediaInfo.Open_Buffer_Init(long, long)', correct the casing of 'File' in parameter name 'File_Size' by changing it to 'file'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="146">Remove the underscores from member name 'MediaInfo.Open_Buffer_Init(long, long)'.</Issue>
+             <Issue Name="MemberParameter" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="146">In member 'MediaInfo.Open_Buffer_Init(long, long)', remove the underscores from parameter name 'File_Offset'.</Issue>
+             <Issue Name="MemberParameter" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="146">In member 'MediaInfo.Open_Buffer_Init(long, long)', remove the underscores from parameter name 'File_Size'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Option(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Option" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="211">In member 'MediaInfo.Option(string)', correct the casing of 'Option' in parameter name 'Option_' by changing it to 'option'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="211">In member 'MediaInfo.Option(string)', remove the underscores from parameter name 'Option_'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Option(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Option" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="189">In member 'MediaInfo.Option(string, string)', correct the casing of 'Option' in parameter name 'Option' by changing it to 'option'.</Issue>
+            </Message>
+            <Message Id="Value" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="189">In member 'MediaInfo.Option(string, string)', correct the casing of 'Value' in parameter name 'Value' by changing it to 'value'.</Issue>
+            </Message>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="189">Change either member or parameter name 'Option' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#State_Get()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="202">Remove the underscores from member name 'MediaInfo.State_Get()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MediaInfoList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnNativeResourcesShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1049" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="50" Level="CriticalError">Implement IDisposable on 'MediaInfoList'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Close(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="243">In member 'MediaInfoList.Close(int)', correct the casing of 'File' in parameter name 'FilePos' by changing it to 'file'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Count_Get(System.Int32,MediaInfoLib.StreamKind)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="259">In member 'MediaInfoList.Count_Get(int, StreamKind)', correct the casing of 'File' in parameter name 'FilePos' by changing it to 'file'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="259">In member 'MediaInfoList.Count_Get(int, StreamKind)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="259">Remove the underscores from member name 'MediaInfoList.Count_Get(int, StreamKind)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Count_Get(System.Int32,MediaInfoLib.StreamKind,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="249">In member 'MediaInfoList.Count_Get(int, StreamKind, int)', correct the casing of 'File' in parameter name 'FilePos' by changing it to 'file'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="249">In member 'MediaInfoList.Count_Get(int, StreamKind, int)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="249">In member 'MediaInfoList.Count_Get(int, StreamKind, int)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="249">Remove the underscores from member name 'MediaInfoList.Count_Get(int, StreamKind, int)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(System.Int32,MediaInfoLib.StreamKind,System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="257">In member 'MediaInfoList.Get(int, StreamKind, int, int)', correct the casing of 'File' in parameter name 'FilePos' by changing it to 'file'.</Issue>
+            </Message>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="257">In member 'MediaInfoList.Get(int, StreamKind, int, int)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="257">In member 'MediaInfoList.Get(int, StreamKind, int, int)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="257">In member 'MediaInfoList.Get(int, StreamKind, int, int)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(System.Int32,MediaInfoLib.StreamKind,System.Int32,System.Int32,MediaInfoLib.InfoKind)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="246">In member 'MediaInfoList.Get(int, StreamKind, int, int, InfoKind)', correct the casing of 'File' in parameter name 'FilePos' by changing it to 'file'.</Issue>
+            </Message>
+            <Message Id="Kind" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="246">In member 'MediaInfoList.Get(int, StreamKind, int, int, InfoKind)', correct the casing of 'Kind' in parameter name 'KindOfInfo' by changing it to 'kind'.</Issue>
+            </Message>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="246">In member 'MediaInfoList.Get(int, StreamKind, int, int, InfoKind)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="246">In member 'MediaInfoList.Get(int, StreamKind, int, int, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="246">In member 'MediaInfoList.Get(int, StreamKind, int, int, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(System.Int32,MediaInfoLib.StreamKind,System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="256">In member 'MediaInfoList.Get(int, StreamKind, int, string)', correct the casing of 'File' in parameter name 'FilePos' by changing it to 'file'.</Issue>
+            </Message>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="256">In member 'MediaInfoList.Get(int, StreamKind, int, string)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="256">In member 'MediaInfoList.Get(int, StreamKind, int, string)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="256">In member 'MediaInfoList.Get(int, StreamKind, int, string)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(System.Int32,MediaInfoLib.StreamKind,System.Int32,System.String,MediaInfoLib.InfoKind)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="255">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind)', correct the casing of 'File' in parameter name 'FilePos' by changing it to 'file'.</Issue>
+            </Message>
+            <Message Id="Kind" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="255">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind)', correct the casing of 'Kind' in parameter name 'KindOfInfo' by changing it to 'kind'.</Issue>
+            </Message>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="255">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="255">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="255">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Get(System.Int32,MediaInfoLib.StreamKind,System.Int32,System.String,MediaInfoLib.InfoKind,MediaInfoLib.InfoKind)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="245">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'File' in parameter name 'FilePos' by changing it to 'file'.</Issue>
+            </Message>
+            <Message Id="Kind" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="245">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Kind' in parameter name 'KindOfInfo' by changing it to 'kind'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="245">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Kind' in parameter name 'KindOfSearch' by changing it to 'kind'.</Issue>
+            </Message>
+            <Message Id="Parameter" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="245">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Parameter' in parameter name 'Parameter' by changing it to 'parameter'.</Issue>
+            </Message>
+            <Message Id="Stream" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="245">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamKind' by changing it to 'stream'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="245">In member 'MediaInfoList.Get(int, StreamKind, int, string, InfoKind, InfoKind)', correct the casing of 'Stream' in parameter name 'StreamNumber' by changing it to 'stream'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Inform(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="244">In member 'MediaInfoList.Inform(int)', correct the casing of 'File' in parameter name 'FilePos' by changing it to 'file'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_Close(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_Close(IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_Count_Get(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_Count_Get(IntPtr, IntPtr, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_Delete(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_Delete(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_Get(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.String,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_Get(IntPtr, IntPtr, IntPtr, IntPtr, string, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_GetI(System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_GetI(IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_Inform(System.IntPtr,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_Inform(IntPtr, IntPtr, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_New()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_New()' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_Open(System.IntPtr,System.String,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_Open(IntPtr, string, IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_Option(System.IntPtr,System.String,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_Option(IntPtr, string, string)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MediaInfoList_State_Get(System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'MediaInfoList.MediaInfoList_State_Get(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Open(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="253">In member 'MediaInfoList.Open(string)', correct the casing of 'File' in parameter name 'FileName' by changing it to 'file'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Open(System.String,MediaInfoLib.InfoFileOptions)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="File" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="242">In member 'MediaInfoList.Open(string, InfoFileOptions)', correct the casing of 'File' in parameter name 'FileName' by changing it to 'file'.</Issue>
+            </Message>
+            <Message Id="Options" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="242">In member 'MediaInfoList.Open(string, InfoFileOptions)', correct the casing of 'Options' in parameter name 'Options' by changing it to 'options'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Option(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Option" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="258">In member 'MediaInfoList.Option(string)', correct the casing of 'Option' in parameter name 'Option_' by changing it to 'option'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="258">In member 'MediaInfoList.Option(string)', remove the underscores from parameter name 'Option_'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Option(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Option" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="247">In member 'MediaInfoList.Option(string, string)', correct the casing of 'Option' in parameter name 'Option' by changing it to 'option'.</Issue>
+            </Message>
+            <Message Id="Value" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="247">In member 'MediaInfoList.Option(string, string)', correct the casing of 'Value' in parameter name 'Value' by changing it to 'value'.</Issue>
+            </Message>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="247">Change either member or parameter name 'Option' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#State_Get()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="MediaInfo.cs" Line="248">Remove the underscores from member name 'MediaInfoList.State_Get()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="VoxSharp">
+       <Types>
+        <Type Name="tools" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#convertToVox(System.IO.FileInfo,System.String,System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="60">Modify 'tools.convertToVox(FileInfo, string, bool)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="84">Modify 'tools.convertToVox(FileInfo, string, bool)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="97">Modify 'tools.convertToVox(FileInfo, string, bool)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="122">Modify 'tools.convertToVox(FileInfo, string, bool)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="135">Modify 'tools.convertToVox(FileInfo, string, bool)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="148">Modify 'tools.convertToVox(FileInfo, string, bool)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="file_ext" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="37">'tools.convertToVox(FileInfo, string, bool)' declares a variable, 'file_ext', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="sox_path" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="46">'tools.convertToVox(FileInfo, string, bool)' declares a variable, 'sox_path', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ShowLog()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="312">Change 'tools.ShowLog()' to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WavToVox(System.String,System.String,System.Boolean,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-10-05 09:15:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Documents and Settings\lee.spendlove\My Documents\SharpDevelop Projects\VoxSharp\VoxSharp" File="tools.cs" Line="176">Modify 'tools.WavToVox(string, string, bool, bool)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182264(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182137(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="MemberParameter">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182240(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+   <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb264492(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>Identifiers should not contain underscores</Name>
+   <Description>Do not use underscores when specifying identifiers. Some generated Visual Studio identifiers for applications contain underscore characters. Underscore characters should generally be avoided in public identifiers.</Description>
+   <Resolution Name="Member">Remove the underscores from member name {0}.</Resolution>
+   <Resolution Name="MemberParameter">In member {0}, remove the underscores from parameter name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182245(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182156(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Mark assemblies with NeutralResourcesLanguageAttribute</Name>
+   <Description>The NeutralResourcesLanguage attribute informs the ResourceManager of the language used to render the neutral culture's resources for an assembly. When looking up resources in the same culture as the neutral resources language, the ResourceManager automatically uses the resources located in the main assembly, instead of searching for a satellite assembly with the current user interface culture for the current thread. This will improve lookup performance for the first resource you load and can reduce your working set.</Description>
+   <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb385967(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkEnumsWithFlags" Category="Microsoft.Design" CheckId="CA1027">
+   <Name>Mark enums with FlagsAttribute</Name>
+   <Description>The enumeration appears to be made up of combinable flags. If this true, apply the Flags attribute to the enumeration.</Description>
+   <Resolution Name="Default">The constituent members of {0} appear to represent flags that can be combined rather than discrete values. If this is correct, mark the enumeration with FlagsAttribute.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182159(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>Move P/Invokes to NativeMethods class</Name>
+   <Description>This type contains members with the DllImport attribute. Members with the DllImport attribute should be contained in classes named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Description>
+   <Resolution Name="Default">Because it is a P/Invoke method, {0} should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182161(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717">
+   <Name>Only FlagsAttribute enums should have plural names</Name>
+   <Description>Plural names indicate that the values of the enumeration can be combined. For example, an enumeration named 'Day' indicates a single day, and an enumeration named 'Days' indicates multiple days. Enumeration values should be combined using the bit-wise OR operator only if the Flags attribute is present on the enumeration.</Description>
+   <Resolution Name="Default">If the name {0} is plural, change it to its singular form.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb264487(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719">
+   <Name>Parameter names should not match member names</Name>
+   <Description>Parameter names should be distinct from member names.</Description>
+   <Resolution Name="Default">Change either member or parameter name {0} so that one differs from the other.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182252(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182278(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+   <Name>Specify MessageBoxOptions</Name>
+   <Description>In order to run correctly on right-to-left systems, all calls to MessageBox.Show should use the overload that specifies MessageBoxOptions as an argument. Programs should detect whether they are running on a right-to-left system at run-time and pass the appropriate MessageBoxOptions value in order to display correctly.</Description>
+   <Resolution Name="Default">Change {0} to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182191(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307">
+   <Name>Specify StringComparison</Name>
+   <Description>If an overload exists that takes a StringComparison argument, it should always be called in favor of an overload that does not.</Description>
+   <Resolution Name="Default">{0} makes a call to {1} that does not explicitly provide a StringComparison. This should be replaced with a call to {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb386080(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnNativeResourcesShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1049">
+   <Name>Types that own native resources should be disposable</Name>
+   <Description>Types that allocate unmanaged resources should implement IDisposable to allow callers to release those resources on demand. Failure to implement IDisposable can result in unmanaged resources being unavailable or underutilized.</Description>
+   <Resolution Name="Default">Implement IDisposable on {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182173(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
