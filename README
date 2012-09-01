@@ -2,11 +2,13 @@ VoxSharp
 
 Convert various audio file formats to dialogic VOX format with GUI
 
-I work for an SME Telecoms Network Operator and created this little app to be able to 
+I work for an SME Telecoms Network Operator and created this to be able to 
 conveniently convert various audio files (PCM, MPEG AUDIO, AIFF, FLAC, VORBIS, WMA etc.) 
 into dialogic VOX format.
 
 It is written in C#.net (framework 2 compatible) and provides a simple GUI interface to 
 browse for audio files to be converted. 
 
-A log of actions is made which can be viewed after the opration has finished.
+It uses MediaInfo, SOX, ffmpeg and Lame dlls.
+
+A log of actions is made which can be viewed after the operation has finished.
