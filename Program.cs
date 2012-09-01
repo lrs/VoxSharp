@@ -1,25 +1,12 @@
-﻿/*
- * Created by SharpDevelop.
- * User: lee
- * Date: 07/09/2010
- * Time: 16:02
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
+
 using System;
 using System.Windows.Forms;
 using System.IO;
 
 namespace VoxSharp
 {
-	/// <summary>
-	/// Class with program entry point.
-	/// </summary>
 	internal sealed class Program
 	{
-		/// <summary>
-		/// Program entry point.
-		/// </summary>
 		[STAThread]
 		private static void Main(string[] args)
 		{
