@@ -8,9 +8,6 @@ namespace VoxSharp
 	using System.Drawing;
 	using System.Windows.Forms;
 
-	/// <summary>
-	/// Description of MainForm.
-	/// </summary>
 	public partial class MainForm : Form
 	{
 	    private static string app_path = AppDomain.CurrentDomain.BaseDirectory, settings_path = app_path + "settings.xml";
