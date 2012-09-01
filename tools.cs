@@ -12,9 +12,6 @@ namespace VoxSharp
 	using System.Xml.XPath;
 	using MediaInfoLib;
 	
-	/// <summary>
-	/// Description of tools.
-	/// </summary>
 	static class tools
 	{
 	    private static string app_path = AppDomain.CurrentDomain.BaseDirectory, settings_path = @"\settings.xml";
